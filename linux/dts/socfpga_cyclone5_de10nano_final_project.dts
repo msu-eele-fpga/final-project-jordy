@@ -1,0 +1,15 @@
+#include "socfpga_cyclone5_de10nano.dtsi"
+
+
+/{
+    rgb_controller_0: rgb_controller_0@ff24a820{
+        compatible = "hexom,rgb_controller_0";
+        reg = <0xff24a820 0x20>;
+    };
+    
+    adc: adc@ff200000{
+        compatible = "hexom,de10nano_adc";
+        reg = <0xff200000 32>;
+    };
+
+};
